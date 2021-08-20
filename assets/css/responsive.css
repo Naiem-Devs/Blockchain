@@ -126,6 +126,9 @@
         font-size: 14px;
         line-height: 25px;
     }
+    .meet p {
+        line-height: 12px;
+    }
     
     .hero_left.mt-5 {
         margin-top: 0 !important;
@@ -386,6 +389,7 @@
     
     .hero_left p {
         max-width: 500px;
+        margin-bottom: 10px;
     }
     .hero_btn a.btns {
         padding: 13px 34px;
@@ -538,7 +542,8 @@
     
     .Experience {
         background-image: url(../img/exp_bgm.png);
-        padding: 80px 0 70px;
+        padding: 80px 0 55px;
+        margin-bottom: 0;
     }
     .exp_left img {
         max-width: 500px;
@@ -589,6 +594,8 @@
         margin-top: 35px;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
     section.hero.pt_100 {
         padding-top: 70px;
@@ -598,7 +605,7 @@
     max-width: 350px;
 }
 .hero_btn {
-    margin: 30px 0;
+    margin: 7px 0 30px;
 }
 
 .code_box {
@@ -675,6 +682,52 @@ table.table.table-bordered.align-middle {
     transform: translateY(0px);
     width: 16px;
     margin-top: 15px;
+}
+.acd {
+    margin-top: -40px;
+}
+
+
+.sd_date h2 {
+    font-size: 25px;
+}
+
+.sd_date_ar a {
+    width: 30px;
+    height: 30px;
+}
+
+.sd_date {
+    margin-bottom: 20px;
+}
+
+.Scheduling table.table thead tr th {padding: 10px 0;padding-left: 40px;padding-right: 10px;font-size: 13px;min-width: 100px;max-width: 150px !important;}
+
+.Scheduling table.table tbody tr td {
+    font-size: 10px;
+    height: 50px;
+}
+.meet p {
+    line-height: 14px;
+    font-size: 8px;
+}
+
+.meet {
+    padding: 4px 4px;
+}
+
+.mt_sp {
+    bottom: 0;
+}
+section.Public.pt-5.mb_100 {
+    padding-top: 0 !important;
+}
+.Public_btc.table-responsive {
+    overflow: auto;
+}
+
+.Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td {
+    padding: 25px;
 }
 
 }

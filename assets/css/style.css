@@ -177,8 +177,25 @@ border-radius: 5px;
 .menu-area nav ul li {
   list-style: none;
   display: inline-block;
+  position: relative;
+}
+.menu-area nav ul li a:hover {
+    color: #41D9AE;
+}
+.menu-area nav ul li a:hover:after {
+    background: #41D9AE;
+}
+.menu-area nav ul li ul.drop_menu li a:hover:after {
+    background: none;
 }
 
+.menu-area nav ul li a.btns:hover:after {
+    background: none;
+}
+.menu-area nav ul li a.btns:hover {
+    color: #fff;
+}
+.menu-area nav ul li a:after {content: "";position: absolute;bottom: -37px;left: 50%;transform: translateX(-50%);width: 100%;height: 3px;background: #ff000000;transition: .3s;}
 .menu-area nav ul li a {
   font-size: 16px;
   color: #fff;
@@ -199,9 +216,41 @@ border-radius: 5px;
 }  
 ul.drop_menu {
   position: absolute;
-  display: none;
+  /* display: none; */
+  width: 230px;
+  left: 87%;
+  transform: translateX(-50%);
+  top: 81px;
+  margin: auto;
+  padding: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: .3s;
+}
+.menu-area nav ul li.dm ul {
+    visibility: hidden;
+    transition: .3s;
 }
 
+.menu-area nav ul li.dm:hover ul {
+    visibility: visible;
+    transition: .3s;
+}
+.menu-area nav ul li ul.drop_menu li a {
+    margin: 0;
+    color: #012341;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px  0px;
+    display: block;
+    width: 100%;
+}
+.menu-area nav ul li ul.drop_menu li a:hover{
+    background: #41D9AE;
+    color: #fff;
+}
+ul.drop_menu li {}
 ul.drop_menu li {
   display: block !important;
   text-align: center;
@@ -242,7 +291,6 @@ ul.drop_menu li {
   position: fixed;
   width: 320px;
   height: 100vh;
-  background: #ffffff;
   z-index: 99;
   box-shadow: 0px 0px 9px -1px #737373;
   top: 0;
@@ -251,6 +299,7 @@ ul.drop_menu li {
   margin-left: -400px;
   padding-left: 40px;
   padding-top: 100px;
+  background: url(../img/full_bg.png);
 }
 .siteBar{
   margin-left: 0; 
@@ -266,12 +315,16 @@ ul.drop_menu li {
 }
 
 .mobile-menu nav ul li a {
-  color: #272835;
+  color: #ffffff;
   font-size: 16px;
   line-height: 40px;
   transition: .3s;
 }
-
+.mobile-menu nav ul li a.btns {
+    padding: 24px 25px;
+    line-height: 0;
+    margin-top: 20px;
+}
 .mobile-menu nav ul li a:hover { 
   color: #ff4900;
 }
@@ -317,7 +370,7 @@ ul.drop_menu li {
   top: 15px;
   width: 40px;
   height: 40px;
-  background: #ff4900;
+  background: #145DA0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
@@ -690,7 +743,9 @@ ul.ptnrs li a {}
 .ov_pd a {
   margin-top: 40px;
 }
-
+.tbc{
+    color: #145DA0;
+}
 table.table.table-bordered.align-middle {
   color: #fff;
   border-collapse: collapse;
@@ -765,7 +820,7 @@ th.table-active {
     position: relative;
     z-index: 0;
 }
-.gen3:after{content: "";position: absolute;top: 51%;left: 50%;width: 50px;height: 50px;background: #fff;border-radius: 50%;transform: translate(-50%, -50%);z-index: -1;}
+.gen3:after{content: "";position: absolute;top: 85px;left: 50%;width: 50px;height: 50px;background: #fff;border-radius: 50%;transform: translate(-50%, -50%);z-index: -1;}
 .gen3 span{
     margin-bottom: 35px;
     padding-top: 20px;
@@ -856,6 +911,126 @@ th.table-active {
 }
 
 /* data End */
+
+
+
+.Scheduling table.table {
+  color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.Scheduling table.table thead{
+    background: #145DA0;
+    box-shadow: 0px 0px 50px rgba(29, 51, 96, 0.05);
+    border-radius: 15px 15px 0px 0px;
+}
+.Scheduling table.table thead tr th{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 0;
+    text-transform: capitalize;
+    text-align: right;
+    padding-right: 30px;
+}
+.Scheduling table.table tbody tr td{
+    text-align: right;
+    padding: 0;
+    width: 150px;
+    height: 80px;
+    padding-right: 15px;
+    vertical-align: bottom;
+    padding-bottom: 7px;
+    font-size: 10px;
+}
+.bdrt {border-radius: 15px;overflow:hidden;overflow: auto;}
+.Scheduling table.table tbody tr td{
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+td.tb1 {
+    box-shadow: -3px 7px 0px 0px #145da0;
+}
+
+.Scheduling table.table tbody tr{
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.Scheduling table.table tbody{
+    border-radius: 20px;
+}
+td.tb2 {
+  border-bottom-right-radius: 20px !important;
+  box-shadow: 14px 16px 20px 0px #145da0;
+}
+.sd_date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sd_date_ar a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.sd_date_ar {
+  display: flex;
+}
+
+.sd_date h2 {
+  font-size: 36px;
+  color: #41d9ae;
+}
+.meet p {
+  margin-bottom: 0;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.meet {
+  width: 100%;
+  height: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  background: #41D9AE;
+}
+
+.mt_sp {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 5px;
+  width: 85%;
+}
+td.meeting {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  position: relative;
+}
+.mt_sp span {
+  font-size: 10px;
+}
+.mee {
+  color: #145da0;
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 /* Experience */
 .Experience{
