@@ -34,9 +34,7 @@
                     <div class="menu-area">
                         <nav>
                             <ul id="nav">
-                                <li>
-                                    <a href="#">NEWS </a>
-                                </li>
+                                <li> <a href="#">NEWS </a> </li>
                                 <li><a href="#">TOKENOMICS</a></li> 
                                 <li><a href="#">ROADMAP</a></li> 
                                 <li><a href="#">WHITEPAPER</a></li> 
@@ -75,14 +73,20 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <nav> 
                         <ul id="nav">
-                            <li>
-                                <a href="#">NEWS
-                                </a>
-                            </li>
+                            <li> <a href="#">NEWS </a> </li>
                             <li><a href="#">TOKENOMICS</a></li> 
                             <li><a href="#">ROADMAP</a></li> 
                             <li><a href="#">WHITEPAPER</a></li> 
-                            <li><a href="#">ABOUT</a></li>    
+                            <li><a href="#">ABOUT</a>
+                                <ul>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Media Toolkit</a></li>
+                                    <li><a href="#">In The Media</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                </ul>
+                            </li>    
                             <li><a href="#" class="btns">BUY NOW</a></li>    
                         </ul>
                     </nav>
@@ -401,27 +405,27 @@
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            <div class="Public_btc table-responsive">
+                            <div class="Public_btc table-responsive" data-id="two">
                                 <table class="table table-bordered align-middle">
                                     <thead>
                                       <tr>
                                         <th scope="col" colspan="0"></th>
                                         <th scope="col">
-                                            <div class="gen">
+                                            <div class="gen" data-id="first">
                                                 <span>1st Generation</span>
                                                 <img src="assets/img/btc.png" alt="">
                                                 <p>Bitcoin BTC</p>
                                             </div> 
                                         </th>
                                         <th scope="col" class="table-active">
-                                            <div class="gen">
+                                            <div class="gen" data-id="two">
                                                 <span>2st Generation</span>
                                                 <img src="assets/img/eth.png" alt="">
                                                 <p>Ethereum ETH</p>
                                             </div>
                                         </th>
                                         <th scope="col">
-                                            <div class="gen gen3">
+                                            <div class="gen gen3" data-id="three">
                                                 <span>3st Generation</span>
                                                 <img  src="assets/img/hbar.png" alt="">
                                                 <p>Hedera HBAR</p>
@@ -854,6 +858,16 @@
         <script src="assets/js/main.js"></script>
         
     <script>
+
+        let allthebtn = document.querySelectorAll('.gen')
+        allthebtn.forEach(allckb => {
+            allckb.addEventListener('click', (e) => {
+                let etr = allckb.dataset['id'];
+                let Elm = allckb.parentElement.parentElement.parentElement.parentElement.parentElement;
+                Elm.dataset['id'] = etr
+                e.stopPropagation();
+            })
+        })
         function myFunction() {
        
             /* Get the text field */
