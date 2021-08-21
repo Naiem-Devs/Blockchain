@@ -91,35 +91,36 @@
         </div> 
     <!-- header-area END -->
 
-    <section class="hero pt_100">
-        <img class="hero_bg" src="assets/img/hero_bg.png" alt="">
-        <div class="container">
-            <div class="row hero_mb">
-                <div class="col-lg-6">
-                    <div class="hero_left mt-5">
-                        <span>The Internet Scale</span>
-                        <h2>Blockchain is Live!</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <div class="hero_btn">
-                            <a href="#" class="btn_bg">GET STARTED</a>
-                            <a href="#" class="btns btn_new">BUY NOW</a>
-                        </div>
-                        <div class="code_box">
-                            <a href="#" class="bdr"><img src="assets/img/copy.png" alt=""></a>
-                            <input type="text" placeholder="XXXXXXXXXXX">
+        <section class="hero pt_100">
+            <img class="hero_bg" src="assets/img/hero_bg.png" alt="">
+            <div class="container">
+                <div class="row hero_mb">
+                    <div class="col-lg-6">
+                        <div class="hero_left mt-5">
+                            <span>The Internet Scale</span>
+                            <h2>Blockchain is Live!</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="hero_btn">
+                                <a href="#" class="btn_bg">GET STARTED</a>
+                                <a href="#" class="btns btn_new">BUY NOW</a>
+                            </div>
+                            <div class="code_box">
+                                <a href="javascript:void" class="bdr" onclick="myFunction()"><img src="assets/img/copy.png" alt=""></a>
+                                <input type="text" value="XXXXXXXXXXX" readonly id="myInput">
+                            </div>
+                            <span id="copytext">Yeah this text is copied</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero_right">
-                        <a href="#">
-                            <img src="assets/img/Hero.png" alt="">
-                        </a>
+                    <div class="col-lg-6">
+                        <div class="hero_right">
+                            <a href="#">
+                                <img src="assets/img/Hero.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
         <main class="Full_bg" >
 
@@ -837,29 +838,7 @@
         </main>
         
         
-        
-
-
-
-        
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-    
+         
 		<!-- JS here --> 
         <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
@@ -873,5 +852,28 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script> 
         <script src="assets/js/plugins.js"></script>   
         <script src="assets/js/main.js"></script>
+        
+    <script>
+        function myFunction() {
+       
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
+            var copyDone = document.getElementById("copytext");
+            
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value); 
+
+            copyDone.classList.add('active');
+
+            setTimeout(() => {
+                copyDone.classList.remove('active');
+            }, 3000);
+
+        }
+    </script>
     </body>
 </html>

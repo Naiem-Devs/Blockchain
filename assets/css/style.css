@@ -1022,8 +1022,18 @@ td.meeting {
   color: #145da0;
   background: #fff;
 }
-
-
+span#copytext {
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  margin-left: 5px;
+  opacity: 0;
+  visibility: hidden;
+}
+span#copytext.active{
+  opacity: 1;
+  visibility: visible;
+}
 
 
 

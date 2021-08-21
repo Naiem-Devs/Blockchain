@@ -476,15 +476,15 @@
     }
     
     .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr th {
-        padding-right: 12px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        line-height: 16px;
-        font-size: 12px;
+        padding-right: 8px;
+        padding-top: 15px;
+        padding-bottom: 14px;
+        line-height: 14px;
+        font-size: 10px;
     }
     
     .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td {
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td small {
@@ -493,19 +493,24 @@
     
     .gen p {
         font-size: 12px;
+        line-height: 15px;
     }
     
     .gen span {
         font-size: 11px;
         margin-bottom: 0;
+        line-height: 13px;
     }
     .network_blk {
         margin-bottom: 35px;
+        text-align: center;
     }
     
     .network_blk p {
         margin: 15px 0 12px;
-        max-width: 300px;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
     }
     
     .network_blk a {
@@ -675,7 +680,7 @@ table.table.table-bordered.align-middle {
 .gen3:after {
     width: 40px;
     height: 40px;
-    top: 63px;
+    top: 74px;
 }
 
 .gen3 img {
@@ -727,12 +732,18 @@ section.Public.pt-5.mb_100 {
 }
 
 .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td {
-    padding: 25px;
+    padding: 5px;
 }
 
 }
  
 /* Large Mobile screen :480px. */
+@media only screen and (min-width: 385px) and (max-width: 767px){
+    .gen3:after { 
+        top: 61px;
+    }
+ 
+}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
  
