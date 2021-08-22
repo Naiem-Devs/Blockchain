@@ -656,7 +656,7 @@ section.Distribution {}
 .rode a.active{
   color: #145DA0;
 }
-.rode a.active span{
+.rode a.active span,.rode.current span{
   background-color: #145DA0;
   color: #fff;
   transition: .3s;
@@ -669,7 +669,7 @@ section.Distribution {}
   opacity: 1;
 }
 
-.rode a:hover{
+.rode a:hover,.rode.current a{
   color: #145DA0;
 }
 .rode a:hover span{
@@ -678,10 +678,10 @@ section.Distribution {}
   box-shadow: 0px 0px 0px 19px #051829;
 }
 
-.rode a:hover span::before{
+.rode a:hover span::before,.rode.current a span::before{
   opacity: 1;
 }
-.rode a:hover span::after{
+.rode a:hover span::after,.rode.current a span::after{
   opacity: 1;
 }
 .lg_bdr{

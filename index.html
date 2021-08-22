@@ -315,7 +315,7 @@
                     </div>
                     <div class="row lg_bdr">
                         <div class="col-lg-3 col-md-6">
-                            <div class="rode">
+                            <div class="rode current">
                                 <a href="#">Q1 2021 
                                     <span>1</span>
                                 </a>
@@ -859,15 +859,35 @@
         
     <script>
 
-        let allthebtn = document.querySelectorAll('.gen')
-        allthebtn.forEach(allckb => {
-            allckb.addEventListener('click', (e) => {
-                let etr = allckb.dataset['id'];
-                let Elm = allckb.parentElement.parentElement.parentElement.parentElement.parentElement;
-                Elm.dataset['id'] = etr
-                e.stopPropagation();
+        
+        function CustomTabs() {
+            let allBlk = document.querySelectorAll('.rode');
+            let allBtn = document.querySelectorAll('.rode a');
+            allBtn.forEach(Attr => {
+                Attr.addEventListener('click', (e) => {
+                    allBlk.forEach(tblk => {
+                        tblk.classList.remove('current')
+                    });
+                    e.preventDefault();
+                    Attr.parentElement.classList.add('current')
+                }) 
+            });
+        }
+        CustomTabs()
+
+        //Table Function 
+        function TablesFC() { 
+            let allthebtn = document.querySelectorAll('.gen')
+            allthebtn.forEach(allckb => {
+                allckb.addEventListener('click', (e) => {
+                    let etr = allckb.dataset['id'];
+                    let Elm = allckb.parentElement.parentElement.parentElement.parentElement.parentElement;
+                    Elm.dataset['id'] = etr
+                    e.stopPropagation();
+                })
             })
-        })
+        }
+        TablesFC()
         function myFunction() {
        
             /* Get the text field */
