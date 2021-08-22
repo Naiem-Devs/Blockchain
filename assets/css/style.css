@@ -750,6 +750,35 @@ ul.ptnrs li a {}
 
 
 /* Public */
+
+.Public_btc.table-responsive[data-id="first"] table thead tr th:nth-child(2){
+        background: #145DA0;
+        border-radius: 25px 25px 0px 0px;
+}
+
+.Public_btc.table-responsive[data-id="two"] table thead tr th:nth-child(3){
+        background: #145DA0;
+        border-radius: 25px 25px 0px 0px;
+}
+
+.Public_btc.table-responsive[data-id="three"] table thead tr th:nth-child(4){
+        background: #145DA0;
+        border-radius: 25px 25px 0px 0px;
+}
+
+
+.Public_btc.table-responsive[data-id="first"] table tbody tr td:nth-child(2){
+    color: #145DA0;
+}
+.Public_btc.table-responsive[data-id="two"] table tbody tr td:nth-child(3){
+    color: #145DA0;
+}
+.Public_btc.table-responsive[data-id="three"] table tbody tr td:nth-child(4){
+    color: #145DA0;
+}
+
+
+
 .ov_pd {
   padding-right: 30px;
 }
