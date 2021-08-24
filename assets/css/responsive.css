@@ -1,7 +1,7 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
     .menu-area nav ul li a {
-        margin-left: 65px;
+        margin-left: 50px;
     }
     
     .exp_left img {
@@ -14,6 +14,24 @@
         align-items: center;
         height: 100%;
     }
+    .container { 
+        padding: 0 50px;
+    }
+    .dev_left img{
+        max-width: 100%;
+    } 
+    .Partners_link a { 
+        width: 200px; 
+    }
+    .title h2 {
+        font-size: 36px;
+        line-height: 48px; 
+    }
+
+
+
+
+
 
 }
 
@@ -21,7 +39,7 @@
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu-area nav ul li a {
-        margin-left: 40px;
+        margin-left: 30px;
     }
     
     .exp_left img {
@@ -35,11 +53,11 @@
         height: 100%;
     }
     .hero_left span {
-        font-size: 55px;
+        font-size: 50px;
     }
     
     .hero_left h2 {
-        font-size: 55px;
+        font-size: 50px;
     }
     
     .hero_right {
@@ -64,11 +82,7 @@
     
     p {
         font-size: 14px;
-    }
-    
-    .title h2 {
-        font-size: 38px;
-    }
+    } 
     
     .Partners_link a {
         width: 47%;
@@ -89,6 +103,38 @@
     .mb_100 {
         margin-bottom: 80px;
     }
+    .container { 
+        padding: 0 50px;
+    }
+    .dev_left img{
+        max-width: 100%;
+    } 
+    .Partners_link a { 
+        width: 170px; 
+    }
+    .title h2 {
+        font-size: 30px;
+        line-height: 48px; 
+    }
+    a.btn_bg {
+        font-size: 18px; 
+        padding: 15px 34px; 
+    }
+    ul.ptnrs li { 
+        margin-bottom: 15px;
+    }
+    .rode a span:before,.rode a span:after { 
+        width: 160px; 
+    }
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -202,11 +248,9 @@
     ul.ptnrs li {
         margin-bottom: 20px;
     }
-    
-    .Partners_blk {
-    }
+     
     .Partners_link a {
-        width: 170px;
+        width: 130px;
         font-size: 13px;
         padding: 0;
     }
@@ -332,6 +376,10 @@
     
     .f_btm {
         margin-top: 35px;
+    }
+    
+    .container { 
+        padding: 0 80px;
     }
 }
 

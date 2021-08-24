@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
+  margin-top: 100px;
   }
 
   
@@ -173,6 +174,10 @@ border-radius: 5px;
   width: 100%;
   z-index: 99;
   border-bottom: 1px solid #ffffff26;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #051829;
 }
 .menu-area nav ul li {
   list-style: none;
