@@ -4,12 +4,12 @@
         margin-left: 50px;
     }
     
-    .exp_left img {
+    .contentHalfHighlightLeft img {
         width: 100%;
         display: block;
     }
     
-    .exp_left {
+    .contentHalfHighlightLeft {
         display: flex;
         align-items: center;
         height: 100%;
@@ -20,7 +20,7 @@
     .dev_left img{
         max-width: 100%;
     } 
-    .Partners_link a { 
+    .docsLink a { 
         width: 200px; 
     }
     .title h2 {
@@ -35,19 +35,18 @@
 
 }
 
-
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
     .menu-area nav ul li a {
         margin-left: 30px;
     }
     
-    .exp_left img {
+    .contentHalfHighlightLeft img {
         width: 100%;
         display: block;
     }
     
-    .exp_left {
+    .contentHalfHighlightLeft {
         display: flex;
         align-items: center;
         height: 100%;
@@ -84,15 +83,15 @@
         font-size: 14px;
     } 
     
-    .Partners_link a {
+    .docsLink a {
         width: 47%;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr th {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr th {
         padding-right: 30px;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td {
         font-size: 36px;
     }
     
@@ -109,7 +108,7 @@
     .dev_left img{
         max-width: 100%;
     } 
-    .Partners_link a { 
+    .docsLink a { 
         width: 170px; 
     }
     .title h2 {
@@ -123,7 +122,7 @@
     ul.ptnrs li { 
         margin-bottom: 15px;
     }
-    .rode a span:before,.rode a span:after { 
+    .roadmapPhase a span:before,.roadmapPhase a span:after { 
         width: 160px; 
     }
 
@@ -137,7 +136,6 @@
 
 
 }
-
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -199,7 +197,7 @@
         width: 400px;
     }
     
-    section.developers {
+    section.contentHalf {
         padding: 100px 0;
     }
     
@@ -218,11 +216,11 @@
     .d_rang {
         margin-bottom: 30px;
     }
-    .rode a span:before {
+    .roadmapPhase a span:before {
         width: 120px;
     }
     
-    .rode a span:after {
+    .roadmapPhase a span:after {
         width: 120px;
     }
     
@@ -230,26 +228,26 @@
         display: none;
     }
     
-    .rode a span {
+    .roadmapPhase a span {
         margin-top: 20px;
     }
     
-    .rode a {
+    .roadmapPhase a {
         font-size: 22px;
         margin-bottom: 30px;
     }
     
-    .rode {
+    .roadmapPhase {
         margin-bottom: 70px;
     }
     
-    section.Partners.mb_100.mt-5 {margin-top: -25px !important;margin-bottom: -10px;}
+    section.partners.mb_100.mt-5 {margin-top: -25px !important;margin-bottom: -10px;}
     
     ul.ptnrs li {
         margin-bottom: 20px;
     }
      
-    .Partners_link a {
+    .docsLink a {
         width: 130px;
         font-size: 13px;
         padding: 0;
@@ -264,7 +262,7 @@
         margin-top: 20px;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr th {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr th {
         padding-right: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -272,11 +270,11 @@
         font-size: 14px;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td {
         font-size: 30px;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td small {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td small {
         font-size: 14px;
     }
     
@@ -303,46 +301,45 @@
         width: 160px;
     }
     
-    section.network.mb_100.pt-5 {
+    section.columbFour.mb_100.pt-5 {
         margin-bottom: -10px;
         padding-top: 0 !important;
     }
-    .data_blk a {
+    .dataBlock a {
         font-size: 35px;
     }
     
-    .data_blk span {
-        width: 90px;
-        height: 90px;
-        margin-right: 25px;
+    .dataBlock span {
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
     }
-    
-    .data_blk span img {
+    .dataBlock span img {
         width: 41%;
     }
     
-    .data_blk {
-        padding: 25px;
+    .dataBlock {
+        padding: 20px;
     }
     
-    .data_blk a p {
+    .dataBlock a p {
         font-size: 15px;
     }
     
-    .Experience {
+    .contentHalfHightlight {
         background-image: url(../img/exp_bgm.png);
         padding: 110px 0 100px;
     }
-    .exp_left img {
+    .contentHalfHighlightLeft img {
         width: 500px;
         margin: auto;
     }
     
-    .exp_left {
+    .contentHalfHighlightLeft {
         text-align: center;
     }
     
-    .exp_right {
+    .contentHalfHighlightRight {
         margin: auto;
         text-align: center;
     }
@@ -382,7 +379,6 @@
         padding: 0 80px;
     }
 }
-
  
 /* small screen :320px. */
 @media (max-width: 767px) {
@@ -449,7 +445,7 @@
         width: 100%;
     }
     
-    section.developers {
+    section.contentHalf {
         padding: 65px 0;
     }
     
@@ -468,12 +464,12 @@
     .d_rang {
         margin-bottom: 25px;
     }
-    .rode a span:before {
+    .roadmapPhase a span:before {
         width: 120px;
         right: 55px;
     }
     
-    .rode a span:after {
+    .roadmapPhase a span:after {
         width: 120px;
         left: 55px;
     }
@@ -482,35 +478,36 @@
         display: none;
     }
     
-    .rode a span {
+    .roadmapPhase a span {
         margin-top: 6px;
         width: 40px;
         height: 40px;
         font-size: 16px;
     }
     
-    .rode a {
+    .roadmapPhase a {
         font-size: 20px;
         margin-bottom: 14px;
     }
     
-    .rode {
+    .roadmapPhase {
         margin-bottom: 70px;
     }
     
-    section.Partners.mb_100.mt-5 {margin-top: -25px !important;margin-bottom: -10px;}
+    section.partners.mb_100.mt-5 {margin-top: -25px !important;margin-bottom: -10px;}
     
     ul.ptnrs li {
         margin-bottom: 20px;
     }
     
-    .Partners_blk {
+    .docsHalf {
     margin-bottom: 30px;
     }
-    .Partners_link a {
-        width: 135px;
+    .docsLink a {
+        width: 119px;
         font-size: 13px;
         padding: 0;
+        height: 35px;
         margin-top: 0;
     }
     .ov_pd {
@@ -523,7 +520,7 @@
         margin-top: 20px;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr th {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr th {
         padding-right: 8px;
         padding-top: 15px;
         padding-bottom: 14px;
@@ -531,11 +528,11 @@
         font-size: 10px;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td {
         font-size: 14px;
     }
     
-    .Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td small {
+    .comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td small {
         font-size: 10px;
     }
     
@@ -567,49 +564,49 @@
         width: 140px;
     }
     
-    section.network.mb_100.pt-5 {
+    section.columbFour.mb_100.pt-5 {
         margin-bottom: -10px;
         padding-top: 0 !important;
     }
-    .data_blk a {
+    .dataBlock a {
         font-size: 26px;
     }
     
-    .data_blk span {
+    .dataBlock span {
         width: 80px;
         height: 80px;
         margin-right: 25px;
     }
     
-    .data_blk span img {
+    .dataBlock span img {
         width: 45%;
     }
     
-    .data_blk {
+    .dataBlock {
         padding: 20px;
     }
     
-    .data_blk a p {
+    .dataBlock a p {
         font-size: 13px;
     }
     
-    .Experience {
+    .contentHalfHightlight {
         background-image: url(../img/exp_bgm.png);
         padding: 80px 0 55px;
         margin-bottom: 0;
     }
-    .exp_left img {
+    .contentHalfHighlightLeft img {
         max-width: 500px;
         margin: auto;
         width: 100%;
     }
     
-    .exp_left {
+    .contentHalfHighlightLeft {
         text-align: center;
         margin-bottom: 30px;
     }
     
-    .exp_right {
+    .contentHalfHighlightRight {
         margin: auto;
         text-align: center;
     }
@@ -690,11 +687,9 @@ main.Full_bg {
 .dev_right a {
     margin-top: 5px;
 }
+ 
 
-.svc_top h5 {
-}
-
-.rode a:hover span {
+.roadmapPhase a:hover span {
     box-shadow: none;
 }
 
@@ -706,20 +701,18 @@ ul.ptnrs {
     margin-top: -20px;
 }
 
-.Partners_blk h2 {
+.docsHalf h2 {
     margin-bottom: 10px;
 }
 
-.Partners_link {
+.docsLink {
     margin-top: 20px;
     align-items: center;
     max-width: 310px;
     margin: auto;
 }
 
-.network_blk h4 {font-size: 18px;}
-table.table.table-bordered.align-middle {
-}
+.network_blk h4 {font-size: 18px;} 
 .gen img {
     width: 20px;
     margin-top: 15px;
@@ -741,22 +734,22 @@ table.table.table-bordered.align-middle {
 }
 
 
-.sd_date h2 {
+.calendarDate h2 {
     font-size: 25px;
 }
 
-.sd_date_ar a {
+.calendarDateNav a {
     width: 30px;
     height: 30px;
 }
 
-.sd_date {
+.calendarDate {
     margin-bottom: 20px;
 }
 
-.Scheduling table.table thead tr th {padding: 10px 0;padding-left: 40px;padding-right: 10px;font-size: 13px;min-width: 100px;max-width: 150px !important;}
+.calendarSchedule table.table thead tr th {padding: 10px 0;padding-left: 40px;padding-right: 10px;font-size: 13px;min-width: 100px;max-width: 150px !important;}
 
-.Scheduling table.table tbody tr td {
+.calendarSchedule table.table tbody tr td {
     font-size: 10px;
     height: 50px;
 }
@@ -772,19 +765,33 @@ table.table.table-bordered.align-middle {
 .mt_sp {
     bottom: 0;
 }
-section.Public.pt-5.mb_100 {
+section.comparison.pt-5.mb_100 {
     padding-top: 0 !important;
 }
-.Public_btc.table-responsive {
+.comparisonTable.table-responsive {
     overflow: auto;
 }
 
-.Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td {
+.comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td {
     padding: 5px;
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
  
+
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 385px) and (max-width: 767px){
     .gen3:after { 

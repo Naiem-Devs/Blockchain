@@ -254,8 +254,7 @@ ul.drop_menu {
 .menu-area nav ul li ul.drop_menu li a:hover{
     background: #41D9AE;
     color: #fff;
-}
-ul.drop_menu li {}
+} 
 ul.drop_menu li {
   display: block !important;
   text-align: center;
@@ -408,8 +407,7 @@ img.hero_bg {
   object-fit: cover;
   width: 100%;
   height: 2000px;
-}
-.hero_left {}
+} 
 
 .hero_left span {font-size: 64px;color: #41D9AE;}
 
@@ -420,9 +418,7 @@ img.hero_bg {
 
 .hero_left p {
     max-width: 650px;
-}
-
-.hero_btn a {}
+} 
 .hero_btn a.btns {
   margin-left: 20px;
   padding: 20px 58px;
@@ -454,17 +450,14 @@ img.hero_bg {
     padding: 5px 15px;
     font-size: 18px;
 }
-
-.code_box img {
-}
+ 
 .code_box a {
     padding: 10px 12px;
 }
 .code_box input::placeholder{
   font-size: 18px;
   color: #fff;
-}
-.hero_right {}
+} 
 
 .hero_right a img {
     width: 100%;
@@ -474,25 +467,17 @@ img.hero_bg {
 
 /* developers  */
 
-section.developers {
+section.contentHalf {
     padding: 150px 0;
 }
-
-.title {}
-
+ 
 .title h2 {
     font-size: 48px;
     line-height: 72px;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
-
-.title p {}
-
-.dev_right {}
-
-.dev_right h2 {}
-
+ 
 .dev_right p {
     margin-bottom: 30px;
 }
@@ -552,9 +537,7 @@ section.developers {
 }
 .sgl_svc:hover span {
   background: #145DA0;
-}
-.svc_top a {}
-
+} 
 .sgl_svc p {
     margin: 20px 0 0;
 }
@@ -563,8 +546,7 @@ section.developers {
 
 
 
-/* Distribution */
-section.Distribution {}
+/* Distribution */ 
 
 .d_rang {
     width: 95%;
@@ -619,11 +601,11 @@ section.Distribution {}
 .roadmap {
     overflow: hidden;
 }
-.rode {
+.roadmapPhase {
     text-align: center;
 }
 
-.rode a {
+.roadmapPhase a {
     font-size: 24px;
     font-weight: 700;
     margin: auto;
@@ -632,7 +614,7 @@ section.Distribution {}
     width: max-content;
 }
 
-.rode a span {
+.roadmapPhase a span {
     display: flex;
     border-radius: 50%;
     width: 50px;
@@ -646,8 +628,8 @@ section.Distribution {}
     background: #0e0e0e;
     transition: .3s;
 }
-.rode a span:after{content: "";position: absolute;top: 50%;left: 69px;width: 233px;height: 2px;background: #145DA0;opacity: 0;transition: .3s;}
-.rode a span:before{
+.roadmapPhase a span:after{content: "";position: absolute;top: 50%;left: 69px;width: 233px;height: 2px;background: #145DA0;opacity: 0;transition: .3s;}
+.roadmapPhase a span:before{
     content: "";
     position: absolute;
     top: 50%;
@@ -658,35 +640,35 @@ section.Distribution {}
     opacity: 0;
     transition: .3s;
 }
-.rode a.active{
+.roadmapPhase a.active{
   color: #145DA0;
 }
-.rode a.active span,.rode.current span{
+.roadmapPhase a.active span,.roadmapPhase.current span{
   background-color: #145DA0;
   color: #fff;
   transition: .3s;
 }
 
-.rode a.active span::before{
+.roadmapPhase a.active span::before{
   opacity: 1;
 }
-.rode a.active span::after{
+.roadmapPhase a.active span::after{
   opacity: 1;
 }
 
-.rode a:hover,.rode.current a{
+.roadmapPhase a:hover,.roadmapPhase.current a{
   color: #145DA0;
 }
-.rode a:hover span{
+.roadmapPhase a:hover span{
   background-color: #145DA0;
   color: #fff;
   box-shadow: 0px 0px 0px 19px #051829;
 }
 
-.rode a:hover span::before,.rode.current a span::before{
+.roadmapPhase a:hover span::before,.roadmapPhase.current a span::before{
   opacity: 1;
 }
-.rode a:hover span::after,.rode.current a span::after{
+.roadmapPhase a:hover span::after,.roadmapPhase.current a span::after{
   opacity: 1;
 }
 .lg_bdr{
@@ -696,7 +678,7 @@ section.Distribution {}
 .lg_bdr::after{content: "";position: absolute;top: 102px;left: -230%;width: 2000%;height: 1px;background: #083256;z-index: -1;}
 
 
-.rode p {
+.roadmapPhase p {
     font-weight: 300;
     padding: 0px 10px;
 }
@@ -707,17 +689,14 @@ section.Distribution {}
 
 
 /* Partners */
-
-ul.ptnrs {}
-
+ 
 ul.ptnrs li {
     display: inline-block;
     margin: 0 10px;
 }
+ 
 
-ul.ptnrs li a {}
-
-.Partners_blk {
+.docsHalf {
     text-align: center;
 }
 .lg_bdr.pMid:after {
@@ -726,18 +705,15 @@ ul.ptnrs li a {}
     background: #083256;
     left: 50%;
     top: 0;
-}
-.Partners_blk h2 {}
+} 
 
-.Partners_blk p {}
-
-.Partners_link {
+.docsLink {
     display: flex;
     justify-content: space-around;
     margin-top: 35px;
 }
 
-.Partners_link a {
+.docsLink a {
     font-size: 16px;
     font-weight: 400;
     width: 220px;
@@ -747,8 +723,7 @@ ul.ptnrs li a {}
     justify-content: center;
     align-items: center;
 }
-
-.Partners_link a.btns {}
+ 
 /* Partners End */
 
 
@@ -756,29 +731,29 @@ ul.ptnrs li a {}
 
 /* Public */
 
-.Public_btc.table-responsive[data-id="first"] table thead tr th:nth-child(2){
+.comparisonTable.table-responsive[data-id="first"] table thead tr th:nth-child(2){
         background: #145DA0;
         border-radius: 25px 25px 0px 0px;
 }
 
-.Public_btc.table-responsive[data-id="two"] table thead tr th:nth-child(3){
+.comparisonTable.table-responsive[data-id="two"] table thead tr th:nth-child(3){
         background: #145DA0;
         border-radius: 25px 25px 0px 0px;
 }
 
-.Public_btc.table-responsive[data-id="three"] table thead tr th:nth-child(4){
+.comparisonTable.table-responsive[data-id="three"] table thead tr th:nth-child(4){
         background: #145DA0;
         border-radius: 25px 25px 0px 0px;
 }
 
 
-.Public_btc.table-responsive[data-id="first"] table tbody tr td:nth-child(2){
+.comparisonTable.table-responsive[data-id="first"] table tbody tr td:nth-child(2){
     color: #145DA0;
 }
-.Public_btc.table-responsive[data-id="two"] table tbody tr td:nth-child(3){
+.comparisonTable.table-responsive[data-id="two"] table tbody tr td:nth-child(3){
     color: #145DA0;
 }
-.Public_btc.table-responsive[data-id="three"] table tbody tr td:nth-child(4){
+.comparisonTable.table-responsive[data-id="three"] table tbody tr td:nth-child(4){
     color: #145DA0;
 }
 
@@ -805,17 +780,17 @@ th.table-active {
   color: #fff;
 }
 
-.Public_btc.table-responsive table.table.table-bordered.align-middle thead{
+.comparisonTable.table-responsive table.table.table-bordered.align-middle thead{
     border-top: none !important;
 }
-.Public_btc.table-responsive table.table.table-bordered.align-middle thead tr {
+.comparisonTable.table-responsive table.table.table-bordered.align-middle thead tr {
     border-top: none;
     border-left: none;
 }
-.Public_btc.table-responsive table.table.table-bordered.align-middle thead tr th {
+.comparisonTable.table-responsive table.table.table-bordered.align-middle thead tr th {
     border: none;
 }
-.Public_btc.table-responsive table.table.table-bordered.align-middle thead tr th.table-active {
+.comparisonTable.table-responsive table.table.table-bordered.align-middle thead tr th.table-active {
     background: #145DA0;
     border-radius: 25px 25px 0px 0px;
 }
@@ -839,7 +814,7 @@ th.table-active {
     margin-bottom: 0;
     font-size: 24px;
 }
-.Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr th{
+.comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr th{
     text-align: right;
     font-size: 18px;
     font-weight: 700;
@@ -852,7 +827,7 @@ th.table-active {
     backdrop-filter: blur(10px);
     border-color: #145DA0;
 }
-.Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td{
+.comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td{
     text-align: center;
     font-size: 40px;
     line-height: 01;
@@ -861,7 +836,7 @@ th.table-active {
     backdrop-filter: blur(10px);
     border-color: #145DA0;
 }
-.Public_btc.table-responsive table.table.table-bordered.align-middle tbody tr td small{
+.comparisonTable.table-responsive table.table.table-bordered.align-middle tbody tr td small{
     font-size: 18px;
 }
 .gen3{
@@ -882,8 +857,7 @@ th.table-active {
 /* Public End */
 
 
-/* Network */
-.network_blk {}
+/* Network */ 
 
 .network_blk h4 {
     font-size: 24px;
@@ -905,7 +879,7 @@ th.table-active {
 
 /* data  */
 
-.data_blk {
+.dataBlock {
     display: flex;
     margin-bottom: 30px;
     background: #001E38;
@@ -915,26 +889,26 @@ th.table-active {
     padding: 35px;
     box-shadow: 0px 1px 1px #145da0;
 }
-.data_blk:hover a p {
+.dataBlock:hover a p {
     color: #fff;
 }
-.data_blk:hover a {
+.dataBlock:hover a {
     color: #145DA0;
 }
-.data_blk:hover span {
+.dataBlock:hover span {
     background: #145DA0;
 }
 
-.data_blk.active a p {
+.dataBlock.active a p {
     color: #fff;
 }
-.data_blk.active a {
+.dataBlock.active a {
     color: #145DA0;
 }
-.data_blk.active span {
+.dataBlock.active span {
     background: #145DA0;
 }
-.data_blk span {
+.dataBlock span {
     width: 125px;
     height: 125px;
     text-align: center;
@@ -946,15 +920,13 @@ th.table-active {
     margin-right: 35px;
     transition: .3s;
 }
-
-.data_blk span ing {}
-
-.data_blk a {
+ 
+.dataBlock a {
     font-size: 40px;
     font-weight: 700;
 }
 
-.data_blk a p {
+.dataBlock a p {
     font-size: 18px;
 }
 
@@ -962,17 +934,17 @@ th.table-active {
 
 
 
-.Scheduling table.table {
+.calendarSchedule table.table {
   color: #fff;
   border-radius: 20px;
   overflow: hidden;
 }
-.Scheduling table.table thead{
+.calendarSchedule table.table thead{
     background: #145DA0;
     box-shadow: 0px 0px 50px rgba(29, 51, 96, 0.05);
     border-radius: 15px 15px 0px 0px;
 }
-.Scheduling table.table thead tr th{
+.calendarSchedule table.table thead tr th{
     font-size: 16px;
     font-weight: 700;
     padding: 20px 0;
@@ -980,7 +952,7 @@ th.table-active {
     text-align: right;
     padding-right: 30px;
 }
-.Scheduling table.table tbody tr td{
+.calendarSchedule table.table tbody tr td{
     text-align: right;
     padding: 0;
     width: 150px;
@@ -991,7 +963,7 @@ th.table-active {
     font-size: 10px;
 }
 .bdrt {border-radius: 15px;overflow:hidden;overflow: auto;}
-.Scheduling table.table tbody tr td{
+.calendarSchedule table.table tbody tr td{
     border-bottom-left-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -1000,27 +972,27 @@ td.tb1 {
     box-shadow: -3px 7px 0px 0px #145da0;
 }
 
-.Scheduling table.table tbody tr{
+.calendarSchedule table.table tbody tr{
     border-radius: 32px;
     overflow: hidden;
     position: relative;
     z-index: 0;
 }
-.Scheduling table.table tbody{
+.calendarSchedule table.table tbody{
     border-radius: 20px;
 }
 td.tb2 {
   border-bottom-right-radius: 20px !important;
   box-shadow: 14px 16px 20px 0px #145da0;
 }
-.sd_date {
+.calendarDate {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.sd_date_ar a {
+.calendarDateNav a {
   width: 50px;
   height: 50px;
   display: flex;
@@ -1029,11 +1001,11 @@ td.tb2 {
   margin-right: 15px;
 }
 
-.sd_date_ar {
+.calendarDateNav {
   display: flex;
 }
 
-.sd_date h2 {
+.calendarDate h2 {
   font-size: 36px;
   color: #41d9ae;
 }
@@ -1091,17 +1063,17 @@ span#copytext.active{
 
 
 /* Experience */
-.Experience{
+.contentHalfHightlight{
   background-image: url(../img/exp_bg.png);
   background-size: cover;
   background-position: center;
   padding: 150px 0 100px;
 } 
-.exp_right a{
+.contentHalfHighlightRight a{
     padding: 18px 58px;
     margin-top: 30px;
 }
-.exp_right{
+.contentHalfHighlightRight{
     width: 87%;
     margin-left: auto;
     margin-top: -30px;
@@ -1142,8 +1114,7 @@ section.faq .accordion-body a span i {
     color: #fff;
     transform: rotate(90deg);
     margin-right: 10px;
-}
-.accordion-collapse{}
+} 
 /* Faq End */
 
 
@@ -1172,10 +1143,7 @@ footer {
 .f_nav ul li a {
     font-size: 12px;
     line-height: 24px;
-}
-.f_nav ul li  {}
-.f_nav ul {}
-
+} 
 .social ul li a {
     width: 32px;
     height: 32px;
